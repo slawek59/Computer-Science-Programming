@@ -51,15 +51,16 @@ bool load(const char *dictionary)
         return false;
     }
 
+    int end_file_check = 0;
 
-
-    do
+    while (EOF)
     {
         char word[LENGTH + 1];
 
-        int i = fscanf(input, "%s", word);
+        end_file_check = fscanf(input, "%s", word);
 
         node *w = malloc(sizeof(node));
+
 
         if (w == NULL)
         {
@@ -69,10 +70,24 @@ bool load(const char *dictionary)
 
         strcpy(w->word, word);
 
-        hash(word);
+        w->next = NULL;
+
+        // unsigned int h = hash(word);
+
+        unsigned int h = word[0] - 97;
+
+        w->next = table[h];
+
+        table[h] = w;
+
 
     }
-    while (EOF);
+
+
+    if (end_file_check == EOF)
+    {
+        return true;
+    }
 
     return false;
 }
