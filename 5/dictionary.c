@@ -25,6 +25,8 @@ const unsigned int N = 26;
 // Hash table
 node *table[N];
 
+unsigned int dictionary_size = 0;
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
@@ -110,9 +112,12 @@ bool load(const char *dictionary)
             w->next = table[h];
 
             table[h] = w;
+
+            dictionary_size += 1;
         }
     }
-    // while (end_file_check != EOF)
+
+    fclose(input);
 
     if (end_file_check == EOF)
     {
@@ -127,33 +132,34 @@ unsigned int size(void)
 {
     // TODO
 
-    unsigned int size = 0;
+    // unsigned int size = 0;
 
-    for (int i = 0; i < N; i++)
-    {
+    // for (int i = 0; i < N; i++)
+    // {
 
-        if (table[i] != NULL)
-        {
+    //     if (table[i] != NULL)
+    //     {
 
-            node *cursor = table[i];
+    //         node *cursor = table[i];
 
-            while (cursor != NULL)
-            {
-                size++;
-                cursor = cursor->next;
-            }
+    //         while (cursor != NULL)
+    //         {
+    //             size++;
+    //             cursor = cursor->next;
+    //         }
 
-        }
+    //     }
 
+    // }
 
-    }
+    // if (size == dictionary_size)
+    // {
+    //     return size;
+    // }
+    // else
+    // return 0;
 
-    if (size != 0)
-    {
-        return size;
-    }
-
-    return 0;
+    return dictionary_size;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
@@ -179,7 +185,6 @@ bool unload(void)
                 tmp = cursor;
             }
             while (cursor != NULL);
-
         }
 
     }
