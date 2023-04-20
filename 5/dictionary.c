@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <strings.h>
 
 #include "dictionary.h"
 
@@ -28,14 +29,45 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    return false;
+
+    int h = hash(word);
+
+    node *cursor = table[h];
+
+    int cmp = 1;
+
+    if (table[h] != NULL)
+    {
+        do
+        {
+
+            cmp = strcasecmp(word, cursor->word);
+            cursor = cursor->next;
+
+        }
+        while (cmp != 0 && cursor != NULL);
+
+    }
+
+    if (cmp == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
 }
+
+
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     return toupper(word[0]) - 'A';
+
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -53,49 +85,74 @@ bool load(const char *dictionary)
 
     int end_file_check = 0;
 
-    while (EOF)
+    while (end_file_check != EOF)
     {
         char word[LENGTH + 1];
 
         end_file_check = fscanf(input, "%s", word);
 
-        node *w = malloc(sizeof(node));
-
-
-        if (w == NULL)
+        if (end_file_check != EOF)
         {
-            printf("Could not allocate enough space\n");
-            return false;
+            node *w = malloc(sizeof(node));
+
+            if (w == NULL)
+            {
+                printf("Could not allocate enough space\n");
+                return false;
+            }
+
+            strcpy(w->word, word);
+
+            w->next = NULL;
+
+            unsigned int h = hash(word);
+
+            w->next = table[h];
+
+            table[h] = w;
         }
-
-        strcpy(w->word, word);
-
-        w->next = NULL;
-
-        // unsigned int h = hash(word);
-
-        unsigned int h = word[0] - 97;
-
-        w->next = table[h];
-
-        table[h] = w;
-
-
     }
-
+    // while (end_file_check != EOF)
 
     if (end_file_check == EOF)
     {
         return true;
     }
-
     return false;
+
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
     // TODO
+
+    unsigned int size = 0;
+
+    for (int i = 0; i < N; i++)
+    {
+
+        if (table[i] != NULL)
+        {
+
+            node *cursor = table[i];
+
+            while (cursor != NULL)
+            {
+                size++;
+                cursor = cursor->next;
+            }
+
+        }
+
+
+    }
+
+    if (size != 0)
+    {
+        return size;
+    }
+
     return 0;
 }
 
@@ -103,5 +160,34 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+
+    unsigned int size_checker = 0;
+
+
+    for (int i = 0; i < N; i++)
+    {
+        node *cursor = table[i];
+        node *tmp = table[i];
+
+        if (table[i] != NULL)
+        {
+            do
+            {
+                cursor = cursor->next;
+                free(tmp);
+                size_checker++;
+                tmp = cursor;
+            }
+            while (cursor != NULL);
+
+        }
+
+    }
+
+    if (size_checker == size())
+    {
+        return true;
+    }
+
     return false;
 }
