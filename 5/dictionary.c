@@ -132,32 +132,6 @@ unsigned int size(void)
 {
     // TODO
 
-    // unsigned int size = 0;
-
-    // for (int i = 0; i < N; i++)
-    // {
-
-    //     if (table[i] != NULL)
-    //     {
-
-    //         node *cursor = table[i];
-
-    //         while (cursor != NULL)
-    //         {
-    //             size++;
-    //             cursor = cursor->next;
-    //         }
-
-    //     }
-
-    // }
-
-    // if (size == dictionary_size)
-    // {
-    //     return size;
-    // }
-    // else
-    // return 0;
 
     return dictionary_size;
 }
@@ -196,3 +170,5 @@ bool unload(void)
 
     return false;
 }
+
+//Sławek
