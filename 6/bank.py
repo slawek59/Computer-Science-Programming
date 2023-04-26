@@ -9,4 +9,5 @@ elif greeting[0].lower().strip() == 'h':
 else:
     print('$100')
 
+
 #Sławek
