@@ -3,9 +3,12 @@ My projects from CS50x in C, Python, SQL, HTML, CSS, JavaScript.
 
 Folders contain projects written with:
 
-1 - 5: C
-6    : Python
-7    : SQL
-8    : HTML, CSS, JavaScript
+<ul>
+  <li>1 - 5: C</li>
+  <li>6    : Python</li>
+  <li>7    : SQL</li>
+  <li>8    : HTML, CSS, JavaScript</li>
+</ul>
+
 
 
