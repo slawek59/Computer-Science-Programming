@@ -7,7 +7,7 @@ Folders contain projects written with:
   <li>1 - 5: C</li>
   <li>6    : Python</li>
   <li>7    : SQL</li>
-  <li>8    : HTML, CSS, JavaScript</li>
+  <li>8    : HTML, CSS, JavaScript, Bootstrap5</li>
 </ul>
 
 
