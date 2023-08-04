@@ -48,13 +48,13 @@
 	flex-wrap: wrap;
 	font-size: 30px;
 	text-align: center;
-	position: absolute;
+	width: auto;
 }
 
 .flex-item {
 	padding: 10px;
 	flex: 30%;
-	position: absolute;
+	width: auto;
 }
 
 @media (max-width: 800px) {
@@ -99,8 +99,7 @@
 .social-media li {
 	padding: 50px;
 	flex: 30%;
-	width: 100%;
-	position: absolute;
+	width: auto;
 }
 
 footer {
