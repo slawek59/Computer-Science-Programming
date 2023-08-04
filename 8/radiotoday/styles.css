@@ -1,8 +1,3 @@
-.website {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
 
 .navbar {
 	background-color: #e6ffff;
@@ -102,9 +97,10 @@
 .social-media li {
 	padding: 50px;
 	flex: 30%;
+	width: 100%;
+	position: relative;
 }
 
 footer {
 	background-color: #f1d3a7;
-	width: 100%;
 }
