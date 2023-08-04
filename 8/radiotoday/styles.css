@@ -48,11 +48,13 @@
 	flex-wrap: wrap;
 	font-size: 30px;
 	text-align: center;
+	position: absolute;
 }
 
 .flex-item {
 	padding: 10px;
 	flex: 30%;
+	position: absolute;
 }
 
 @media (max-width: 800px) {
@@ -98,7 +100,7 @@
 	padding: 50px;
 	flex: 30%;
 	width: 100%;
-	position: relative;
+	position: absolute;
 }
 
 footer {
