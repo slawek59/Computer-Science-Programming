@@ -12,132 +12,136 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand w-25" href="https://pl.wikipedia.org/wiki/RadioShack" target="_blank"><img
-                        src="radioshack-logo.png" class="img-fluid" width="100%" alt="RadioShack Logo">
-                </a>
+    <div class="website">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand w-25" href="https://pl.wikipedia.org/wiki/RadioShack" target="_blank"><img
+                            src="radioshack-logo.png" class="img-fluid" width="100%" alt="RadioShack Logo">
+                    </a>
 
-                <button class="navbar-toggler end-0 " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#">Store Locator</a>
-                        <a class="nav-link" href="#">Steve's Workbench</a>
-                        <a class="nav-link" href="#">RadioShack Services</a>
-                        <a class="nav-link" href="#">Electronic Repair</a>
-                        <a class="nav-link" href="#">About RadioShack</a>
-                        <a class="nav-link" href="#">Product Support</a>
+                    <button class="navbar-toggler end-0 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Store Locator</a>
+                            <a class="nav-link" href="#">Steve's Workbench</a>
+                            <a class="nav-link" href="#">RadioShack Services</a>
+                            <a class="nav-link" href="#">Electronic Repair</a>
+                            <a class="nav-link" href="#">About RadioShack</a>
+                            <a class="nav-link" href="#">Product Support</a>
+                        </div>
                     </div>
                 </div>
+
+            </nav>
+
+            <div class="h-picture container-fluid pt-5 pb-5">
+                <img src="radioshack-logo.png" class="img-fluid" width="100%" alt="RadioShack Logo">
             </div>
+        </header>
+        <main>
+            <section>
+                <div class="container-fluid mt-5">
+                    <div class="about container-fluid">
+                        <h1 class="heading display-1">
+                            About Us</h1>
+                        <img class="h1-picture" src="shack-pic-1.jpg" alt="electronics" width="100%" height="auto">
+                    </div>
 
-        </nav>
+                    <div class="div1 container mt-5">
+                        <ul class="list learn-more">
+                            <li class="flex-item">Lorem ipsum
+                                <p>
+                                    <a href="#">Learn more</a>
+                                </p>
+                            </li>
+                            <li class="flex-item">Lorem ipsum
+                                <p>
+                                    <a href="#">Learn more</a>
+                                </p>
+                            </li>
+                            <li class="flex-item">Lorem ipsum
+                                <p>
+                                    <a href="#">Learn more</a>
+                                </p>
+                            </li>
 
-        <div class="h-picture container-fluid pt-5 pb-5">
-            <img src="radioshack-logo.png" class="img-fluid" width="100%" alt="RadioShack Logo">
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="container-fluid mt-5">
-                <div class="about container-fluid">
-                    <h1 class="heading display-1">
-                        About Us</h1>
-                    <img class="h1-picture" src="shack-pic-1.jpg" alt="electronics" width="100%" height="auto">
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
 
-                <div class="div1 container mt-5">
-                    <ul class="list learn-more">
-                        <li class="flex-item">Lorem ipsum
-                            <p>
-                                <a href="#">Learn more</a>
-                            </p>
-                        </li>
-                        <li class="flex-item">Lorem ipsum
-                            <p>
-                                <a href="#">Learn more</a>
-                            </p>
-                        </li>
-                        <li class="flex-item">Lorem ipsum
-                            <p>
-                                <a href="#">Learn more</a>
-                            </p>
-                        </li>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="shack-pic-2.jpg" alt="Electronic devices" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="shack-pic-3.jpg" alt="Electronic circuit" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="shack-pic-1.jpg" alt="Vintage computer on a desk" class="d-block w-100">
+                    </div>
+                </div>
 
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-icon carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-icon carousel-control-next-icon"></span>
+                </button>
+            </div>
 
+            <section cla>
+                <div class="text-section container-fluid mt-5">
+                    <p class="text-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sint vero quas laudantium
+                        vitae
+                        animi
+                        error laborum! Esse repellat suscipit animi veritatis similique blanditiis beatae cupiditate
+                        maxime
+                        doloribus laborum quis, rem voluptatibus explicabo cumque, accusantium eaque sit optio deserunt
+                        placeat
+                        repellendus perspiciatis temporibus! Est quaerat perferendis ratione perspiciatis hic esse
+                        alias,
+                        maiores
+                        quas.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <ul class="social-media">
+                        <li><a href="#"><img src="facebook.png" alt="Facebook logo"></a></li>
+                        <li><a href="#"><img src="twitter.png" alt="Twitter logo"></a></li>
+                        <li><a href="#"><img src="instagram.png" alt="Instagram logo"></a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"></script>
 
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="shack-pic-2.jpg" alt="Electronic devices" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="shack-pic-3.jpg" alt="Electronic circuit" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="shack-pic-1.jpg" alt="Vintage computer on a desk" class="d-block w-100">
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-icon carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-icon carousel-control-next-icon"></span>
-            </button>
-        </div>
-
-        <section cla>
-            <div class="text-section container-fluid mt-5">
-                <p class="text-paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sint vero quas laudantium
-                    vitae
-                    animi
-                    error laborum! Esse repellat suscipit animi veritatis similique blanditiis beatae cupiditate maxime
-                    doloribus laborum quis, rem voluptatibus explicabo cumque, accusantium eaque sit optio deserunt
-                    placeat
-                    repellendus perspiciatis temporibus! Est quaerat perferendis ratione perspiciatis hic esse alias,
-                    maiores
-                    quas.
-                </p>
-            </div>
-        </section>
-        <section>
+        </main>
+        <footer>
             <div>
-                <ul class="social-media">
-                    <li><a href="#"><img src="facebook.png" alt="Facebook logo"></a></li>
-                    <li><a href="#"><img src="twitter.png" alt="Twitter logo"></a></li>
-                    <li><a href="#"><img src="instagram.png" alt="Instagram logo"></a></li>
-                </ul>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sint vero quas laudantium vitae
             </div>
-        </section>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
-
-    </main>
-    <footer>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sint vero quas laudantium vitae
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
