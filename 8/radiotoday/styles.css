@@ -48,11 +48,13 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
-.flex-item {
-	/* flex: 1; */
-	border: solid;
+.learn-more li {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 @media (max-width: 800px) {
@@ -87,14 +89,14 @@
 .social-media {
 	display: flex;
 	justify-content: space-evenly;
-}
-
-.social-media li {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
 .social-media li {
-	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 footer {
