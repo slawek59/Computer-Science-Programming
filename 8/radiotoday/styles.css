@@ -47,11 +47,13 @@
 	font-size: 30px;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 }
 
-/* .flex-item {
-	flex: 1;
-} */
+.flex-item {
+	/* flex: 1; */
+	border: solid;
+}
 
 @media (max-width: 800px) {
 	.learn-more {
