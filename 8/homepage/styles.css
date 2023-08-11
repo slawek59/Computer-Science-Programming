@@ -18,7 +18,7 @@
     /* opacity: 0.5; */
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
     .main {
         background-image: url('small-monteriggioni3.jpg');
     }
