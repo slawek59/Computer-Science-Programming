@@ -18,9 +18,9 @@
     /* opacity: 0.5; */
 }
 
-@media  (max-width: 768px) {
+@media  (max-width: 600px) {
     .main {
-        background-image: url('small-monteriggioni3.jpg');
+        background-image: url('small-monteriggioni6.jpg');
     }
 }
 
