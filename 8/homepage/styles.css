@@ -1,0 +1,46 @@
+.offcanvas {
+    background-image: url('starry-sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offcanvas, .offcanvas-body {
+    color: white;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 810px;
+    background-repeat: no-repeat;
+    background-image: url('small-monteriggioni.jpg');
+    /* opacity: 0.5; */
+}
+
+@media only screen and (min-width: 660px) {
+    .main {
+        background-image: url('monteriggioni.jpg');
+    }
+}
+
+header {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.header-p {
+    width: 50%;
+    text-align: center;
+
+}
+
+.header-img {
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
