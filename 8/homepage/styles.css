@@ -14,11 +14,11 @@
     flex-direction: column;
     height: 810px;
     background-repeat: no-repeat;
-    background-image: url('small-monteriggioni2.jpg');
+    background-image: url('small-monteriggioni3.jpg');
     /* opacity: 0.5; */
 }
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 600px) {
     .main {
         background-image: url('monteriggioni.jpg');
     }
