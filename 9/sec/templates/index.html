@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 class="mt-5">Library of {{ name }}</h1>
+
+    <!--TODO: Implement a search form-->
+
+    <form action="/", method="post">
+        <input name="page" type="text" placeholder="Go to page" autofocus>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p class="text-break mt-3">
+        {{ random_string }}
+    </p>
+
+    <!--TODO: Implement a search history table-->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Search History
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in history %}
+                <tr>
+                    <td>{{ row["page"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
