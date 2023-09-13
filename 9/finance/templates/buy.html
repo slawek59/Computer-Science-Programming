@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<h3 class="mb-5 w-auto">
+    Logged in as {{ log }}
+</h3>
+<form action="/buy" method="post">
+    <div class="mb-3">
+        <input autofocus class="form-control mx-auto w-auto"  autocomplete="off" name="symbol" placeholder="Symbol" type="text">
+    </div>
+    <div class="mb-3">
+        <input autofocus class="form-control mx-auto w-auto" autocomplete="off" name="shares" placeholder="Number of shares" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Buy</button>
+</form>
+
+{% endblock %}

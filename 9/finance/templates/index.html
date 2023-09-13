@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+<h3 class="mb-5 w-auto">
+    Logged in as {{ log }}
+</h3>
+    <table class="table table-hover table-striped container">
+        <thead>
+            <th>
+                Symbol
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Amount of shares
+            </th>
+            <th>
+                TOTAL
+            </th>
+        </thead>
+        <tbody>
+{% if check  %}
+{% for i in range(symbols_list | length) %}
+        <tr>
+            <td>
+                {{ symbols_list[i] }}
+            </td>
+            <td>
+                {{ symbols_list[i] }}
+            </td>
+            <td>
+                {{ current_price_list[i] | usd() }}
+            </td>
+            <td>
+                {{ number_of_shares_list[i] }}
+            </td>
+            <td>
+                {{ total_list[i] | usd() }}
+            </td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+
+        <tr>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <strong>Cash left</strong>
+            </td>
+            <td>
+                {{ cash_left | usd() }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            <td>
+                <strong>GRAND TOTAL</strong>
+            </td>
+            <td>
+                {{ grand_total | usd() }}
+            </td>
+        </tr>
+</tbody>
+</table>
+{% endblock %}

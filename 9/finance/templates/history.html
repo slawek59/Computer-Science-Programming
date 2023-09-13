@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h3 class="mb-5 w-auto">
+    Logged in as {{ log }}
+</h3>
+<table class="table table-hover table-striped container">
+    <thead>
+        <th>
+            &#8470;
+        </th>
+        <th>
+            Symbol
+        </th>
+        <th>
+            Shares
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Transacted
+        </th>
+    </thead>
+    <tbody>
+        {% if history_rows  %}
+        {% for i in range(history_rows | length) %}
+            <tr>
+                <td>
+                    {{ i }}
+                </td>
+                <td>
+                    {{ history_rows[i]["symbol"] }}
+                </td>
+                <td>
+                    {{ history_rows[i]["number_of_shares"] }}
+                </td>
+                <td>
+                    {{ history_rows[i]["price_each"] | usd() }}
+                </td>
+                <td>
+                    {{ history_rows[i]["date_time"] }}
+                </td>
+
+            </tr>
+            {% endfor %}
+            {% endif %}
+</tbody>
+</table>
+
+{% endblock %}
