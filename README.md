@@ -10,6 +10,7 @@ Folders contain projects written with:
   <li>8    : HTML, CSS, JavaScript, Bootstrap5</li>
   <li>9    : Python with Flask, Jinja, HTML and CSS</li>
 </ul>
+<h2>Last project is here: <a href="https://github.com/slawek59/Computer-Science-Programming/tree/main/9/finance">Finance</a></h2>
 
 
 
