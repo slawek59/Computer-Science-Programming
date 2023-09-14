@@ -11,7 +11,7 @@ Folders contain projects written with:
   <li>9    : Python with Flask, Jinja, HTML and CSS</li>
 </ul>
 <h2>Last project is here: <a href="https://github.com/slawek59/Computer-Science-Programming/tree/main/9/finance">Finance</a></h2>
-<h3>Written in Python with Flask, HTML and Jinja, CSS with Bootstrap and SQL. A was provided with the code for API, some code in Python here and there and basic layout. Plus apology.html is not mine, it is a higher level joke U+1F609
+<h3>Written in Python with Flask, HTML and Jinja, CSS with Bootstrap and SQL. A was provided with the code for API, some code in Python here and there and basic layout. Plus apology.html is not mine, it is a higher level joke &#128521;	
 </h3>
 
 
